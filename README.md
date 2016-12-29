@@ -4,7 +4,7 @@
 To make it easier to work with, I will be explaining and looking into the 42 School Graphics Library Minilibx.
 
 Along with this goal I plan to create a set of tools that can used to make a few different types of programs.
-Basing this off my previous library for ft_wireframe and some of the ideas here at the lab.
+Basing this off my previous library for ft_wireframe and some of the ideas going around here at the lab.
 
 ## MiniLibX
 
@@ -28,9 +28,7 @@ MiniLibX is described in the following man pages:
 
 * [mlx_loop](man_mlx_loop.md) : handle keyboard or mouse events
 
-### TODO: Make all man page markdown files.
-
-### TODO: Man page links go here
+### TODO: STARTING POINT!
 
 ### TODO: Answer Questions
 What do I think was missing?
