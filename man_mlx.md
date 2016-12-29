@@ -4,9 +4,12 @@
 
 ## SYNOPSYS
 
-`#include  <mlx.h>`
+```C
+#include  <mlx.h>
 
-`void  *mlx_init();`
+void  *
+mlx_init();
+```
 
 ## DESCRIPTION
 
@@ -84,7 +87,8 @@ otherwise a non-null pointer is returned as a connection identifier.
 
 ## SEE ALSO
 
-mlx_new_window(3), mlx_pixel_put(3), mlx_new_image(3), [mlx_loop(3)](man_mlx_loop.md)
+[mlx_new_window(3)](man_mlx_new_window.md), [mlx_pixel_put(3)](man_mlx_pixel_put.md),
+[mlx_new_image(3)](man_mlx_new_image.md), [mlx_loop(3)](man_mlx_loop.md)
 
 ## AUTHOR
 
