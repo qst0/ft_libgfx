@@ -6,6 +6,8 @@ To make it easier to work with, I will be explaining and looking into the 42 Sch
 Along with this goal I plan to create a set of tools that can used to make a few different types of programs.
 Basing this off my previous library for ft_wireframe and some of the ideas going around here at the lab.
 
+*This is on hold for the moment, so I can get the remaining experience to join the PHP piscine.*
+
 ## MiniLibX
 
 The keystone of the graphics branch at 42 is learning to use MiniLibX
