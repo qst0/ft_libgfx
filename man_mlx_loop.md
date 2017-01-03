@@ -75,6 +75,10 @@ mlx_loop_hook ( void *mlx_ptr, int (*funct_ptr)(), void *param );
        See  source  code  of mlx_int_param_event.c to find out how the MiniLibX will call your own
        function for a specific event.
        
+       TODO:
+       Link directly to mlx_int_param_event.c here, for now, you have to download the x11 sources.
+       Mlx in the repo right now is MACOS version.
+       
 ## SEE ALSO
 
 [mlx(3)](man_mlx.md), [mlx_new_window(3)](man_mlx_new_window.md),
