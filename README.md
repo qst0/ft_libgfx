@@ -3,6 +3,11 @@
 
 To make it easier to work with, I will be explaining and looking into the 42 School Graphics Library Minilibx.
 
+I have uploaded all the minilibx sources for viewing and use.
+[[X11]](https://github.com/qst0/ft_libgfx/tree/master/minilibx_X11_sources)
+[[El Capitan]](https://github.com/qst0/ft_libgfx/tree/master/minilibx_macos_elcapitan)
+[[Sierra]](https://github.com/qst0/ft_libgfx/tree/master/minilibx_macos_sierra)
+
 Along with this goal I plan to create a set of tools and functions that can be used to make different types of programs.
 The creation of these tools and functions will be set up as a series of exercises.
 
