@@ -83,11 +83,12 @@ Line Algo?
 * https://books.google.co.uk/books?id=SJRNoOaXs2wC
 * http://www.benpadiah.com/MISC_diagrams/pages/equations/holognomon.html
 * http://stackoverflow.com/questions/5294955/how-to-scale-down-a-range-of-numbers-with-a-known-min-and-max-value
+* http://www.toves.org/books/java/ch18-recurex/
 
 #### wolf3d
+* http://lodev.org/cgtutor/raycasting.html
 * http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/
 * http://mdn.github.io/canvas-raycaster/index.html
-* http://www.toves.org/books/java/ch18-recurex/
 
 #### rt_v1
 * https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf
