@@ -59,6 +59,7 @@ Line Algo?
 #### ft_wireframe
 * http://www.ecere.com/3dbhole/mathematics_of_3d_graphics.html
 * http://www.ecere.com/3dbhole/3d_transformations.html
+* http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf
 * https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html
 * https://www.khanacademy.org/math/precalculus/precalc-matrices
 * http://stackoverflow.com/questions/12554614/maths-for-color-gradient
@@ -95,7 +96,7 @@ Line Algo?
 * http://lodev.org/cgtutor/
 * http://www.opengl-tutorial.org/beginners-tutorials/
 * http://glslsandbox.com/e#25304.0
-* http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf
+
 
 #### Wikipedia Links
 * http://en.wikipedia.org/wiki/Matrix_(mathematics)
