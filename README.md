@@ -26,13 +26,9 @@ To help demystify the man pages I took a moment and formatted them for markdown.
 MiniLibX is described in the following man pages:
 
 * [mlx](man_mlx.md) : MiniLibX overview
-
 * [mlx_new_window](man_mlx_new_window.md) : manage windows
-
 * [mlx_pixel_put](man_mlx_pixel_put.md) : draw inside window
-
 * [mlx_new_image](man_mlx_new_image.md) : manipulate images
-
 * [mlx_loop](man_mlx_loop.md) : handle keyboard or mouse events
 
 # TODOS --- Ideas for this project when I return to it.
