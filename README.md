@@ -13,8 +13,6 @@ The creation of these tools and functions will be set up as a series of exercise
 
 Basing this off my previous library for [ft_wireframe](https://github.com/qst0/ft_wireframe), [ft_fractal](https://github.com/qst0/ft_fractal) and some of the ideas going around here at the lab.
 
-*This is on hold for the moment, so I can get the remaining experience to join the PHP piscine.*
-
 ## MiniLibX
 
 The keystone of the graphics branch at 42 is learning to use MiniLibX
@@ -30,6 +28,41 @@ MiniLibX is described in the following man pages:
 * [mlx_pixel_put](man_mlx_pixel_put.md) : draw inside window
 * [mlx_new_image](man_mlx_new_image.md) : manipulate images
 * [mlx_loop](man_mlx_loop.md) : handle keyboard or mouse events
+
+Take some time and read these pages, if you want to read them in the console:
+
+`man minilibx/man/man1/mlx.1`
+
+The last part is the man page name
+
+```BASH
+mlx.1
+mlx_loop.1
+mlx_new_image.1
+mlx_new_window.1
+mlx_pixel_put.1
+```
+
+Once you have done that, try to open a window.
+Here is a short example:
+
+``` C
+#include <mlx.h>
+
+int main(void)
+{
+  void *mlx;
+  void *window;
+  
+  mlx = mlx_init();
+  window = mlx_new_window(mlx, 1000, 1000, "Title");
+  
+  mlx_loop(mlx);
+  return (0);
+}
+```
+
+`gcc -Wall -Wextra -Werror -I minilibx -L minilibx -lmlx -framework OpenGL -framework AppKit main.c`
 
 # TODOS --- Ideas for this project when I return to it.
 
