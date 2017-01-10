@@ -13,8 +13,6 @@ The creation of these tools and functions will be set up as a series of exercise
 
 Basing this off my previous library for [ft_wireframe](https://github.com/qst0/ft_wireframe), [ft_fractal](https://github.com/qst0/ft_fractal) and some of the ideas going around here at the lab.
 
-*This is on hold for the moment, so I can get the remaining experience to join the PHP piscine.*
-
 ## MiniLibX
 
 The keystone of the graphics branch at 42 is learning to use MiniLibX
@@ -30,6 +28,41 @@ MiniLibX is described in the following man pages:
 * [mlx_pixel_put](man_mlx_pixel_put.md) : draw inside window
 * [mlx_new_image](man_mlx_new_image.md) : manipulate images
 * [mlx_loop](man_mlx_loop.md) : handle keyboard or mouse events
+
+Take some time and read these pages, if you want to read them in the console:
+
+`man minilibx/man/man1/mlx.1`
+
+The last part is the man page name
+
+```BASH
+mlx.1
+mlx_loop.1
+mlx_new_image.1
+mlx_new_window.1
+mlx_pixel_put.1
+```
+
+Once you have done that, try to open a window.
+Here is a short example:
+
+``` C
+#include <mlx.h>
+
+int main(void)
+{
+  void *mlx;
+  void *window;
+  
+  mlx = mlx_init();
+  window = mlx_new_window(mlx, 1000, 1000, "Title");
+  
+  mlx_loop(mlx);
+  return (0);
+}
+```
+
+`gcc -Wall -Wextra -Werror -I minilibx -L minilibx -lmlx -framework OpenGL -framework AppKit main.c`
 
 # TODOS --- Ideas for this project when I return to it.
 
@@ -56,44 +89,56 @@ Line Algo?
 ## Link Dump!
 ### Anything even slightly useful for coming to a better understanding of computer gfx
 
+#### ft_wireframe
+* http://www.ecere.com/3dbhole/mathematics_of_3d_graphics.html
+* http://www.ecere.com/3dbhole/3d_transformations.html
+* http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf
+* https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html
+* https://www.khanacademy.org/math/precalculus/precalc-matrices
+* http://stackoverflow.com/questions/12554614/maths-for-color-gradient
+* http://faculty.cs.tamu.edu/jchai/cpsc641_spring10/PerspectiveProjection.pdf
+* https://gist.github.com/jbenet/1087739
+* http://stackoverflow.com/questions/5167269/clock-gettime-alternative-in-mac-os-x
+* https://www.tutorialspoint.com/computer_graphics/visible_surface_detection.htm
+* https://www.fastgraph.com/makegames/3drotation/
+
+#### ft_fractal
+* http://www.karlsims.com/julia.html
+* http://www.relativitybook.com/CoolStuff/julia_set.html
+* http://paulbourke.net/fractals/apollony/
+* http://www.relativitybook.com/CoolStuff/julia_set_4d.html
+* http://www.fractal-animation.net/ufvp.html
+* http://jonisalonen.com/2013/lets-draw-the-mandelbrot-set/
+* http://stackoverflow.com/questions/33978167/julia-set-rendering-code
+* http://lyc.deviantart.com/gallery/
+* http://bugman123.com/index.html
+* http://bugman123.com/Hypercomplex/
+* https://books.google.co.uk/books?id=SJRNoOaXs2wC
+* http://www.benpadiah.com/MISC_diagrams/pages/equations/holognomon.html
+* http://stackoverflow.com/questions/5294955/how-to-scale-down-a-range-of-numbers-with-a-known-min-and-max-value
+* http://www.toves.org/books/java/ch18-recurex/
+
+#### wolf3d
+* http://lodev.org/cgtutor/raycasting.html
+* http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/
+* http://mdn.github.io/canvas-raycaster/index.html
+
+#### rt_v1
+* https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf
+
+#### misc
+* http://lodev.org/cgtutor/
+* http://www.opengl-tutorial.org/beginners-tutorials/
+* http://glslsandbox.com/e#25304.0
+
+
+#### Wikipedia Links
 * http://en.wikipedia.org/wiki/Matrix_(mathematics)
 * https://en.wikipedia.org/wiki/Orthographic_projection
 * https://en.wikipedia.org/wiki/Gimbal
 * https://en.wikipedia.org/wiki/Gimbal_lock
 * https://en.wikipedia.org/wiki/Ray_casting
 * https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
-* http://glslsandbox.com/e#25304.0
-* http://faculty.cs.tamu.edu/jchai/cpsc641_spring10/PerspectiveProjection.pdf
-* https://gist.github.com/jbenet/1087739
-* http://stackoverflow.com/questions/5167269/clock-gettime-alternative-in-mac-os-x
-* https://www.tutorialspoint.com/computer_graphics/visible_surface_detection.htm
-* http://stackoverflow.com/questions/12554614/maths-for-color-gradient
-* http://www.ecere.com/3dbhole/3d_transformations.html
-* http://www.ecere.com/3dbhole/mathematics_of_3d_graphics.html
-* http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf
-* https://www.khanacademy.org/math/precalculus/precalc-matrices
-* http://jonisalonen.com/2013/lets-draw-the-mandelbrot-set/
 * https://en.wikipedia.org/wiki/Sierpinski_carpet
-* http://stackoverflow.com/questions/33978167/julia-set-rendering-code
-* http://www.karlsims.com/julia.html
-* http://www.toves.org/books/java/ch18-recurex/
-* https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf
-* https://www.google.com/search?sourceid=chrome-psyapi2&ion=1&espv=2&ie=UTF-8&q=ray%20tracing%20tutorial&oq=ray%20tracing&aqs=chrome.1.69i57j0l5.2455j0j7
-* http://lodev.org/cgtutor/
-* http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/
-* http://mdn.github.io/canvas-raycaster/index.html
-* http://paulbourke.net/fractals/apollony/
-* http://www.relativitybook.com/CoolStuff/julia_set_4d.html
 * https://en.wikipedia.org/wiki/Apollonian_gasket
-* http://www.fractal-animation.net/ufvp.html
-* http://www.relativitybook.com/CoolStuff/julia_set.html
-* https://books.google.co.uk/books?id=SJRNoOaXs2wC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
-* http://www.benpadiah.com/MISC_diagrams/pages/equations/holognomon.html
-* http://stackoverflow.com/questions/5294955/how-to-scale-down-a-range-of-numbers-with-a-known-min-and-max-value
-* http://bugman123.com/index.html
-* http://lyc.deviantart.com/gallery/
-* http://bugman123.com/Hypercomplex/
 * https://en.wikipedia.org/wiki/Julia_set
-* http://www.opengl-tutorial.org/beginners-tutorials/
-* https://www.fastgraph.com/makegames/3drotation/
-* https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html
