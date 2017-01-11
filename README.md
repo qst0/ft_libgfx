@@ -90,8 +90,8 @@ Line Algo?
 ### Anything even slightly useful for coming to a better understanding of computer gfx
 
 #### ft_wireframe
-* http://www.ecere.com/3dbhole/mathematics_of_3d_graphics.html
-* http://www.ecere.com/3dbhole/3d_transformations.html
+* http://www.ecere.com/3dbhole/mathematics_of_3d_graphics.html :star:
+* http://www.ecere.com/3dbhole/3d_transformations.html :star:
 * http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf
 * https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html
 * https://www.khanacademy.org/math/precalculus/precalc-matrices
@@ -103,6 +103,7 @@ Line Algo?
 * https://www.fastgraph.com/makegames/3drotation/
 
 #### ft_fractal
+* http://lodev.org/cgtutor/juliamandelbrot.html :star:
 * http://www.karlsims.com/julia.html
 * http://www.relativitybook.com/CoolStuff/julia_set.html
 * http://paulbourke.net/fractals/apollony/
@@ -119,7 +120,7 @@ Line Algo?
 * http://www.toves.org/books/java/ch18-recurex/
 
 #### wolf3d
-* http://lodev.org/cgtutor/raycasting.html
+* http://lodev.org/cgtutor/raycasting.html :star:
 * http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/
 * http://mdn.github.io/canvas-raycaster/index.html
 
@@ -127,7 +128,8 @@ Line Algo?
 * https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf
 
 #### misc
-* http://lodev.org/cgtutor/
+* http://www.playfuljs.com/ :star:
+* http://lodev.org/cgtutor/ :star:
 * http://www.opengl-tutorial.org/beginners-tutorials/
 * http://glslsandbox.com/e#25304.0
 
