@@ -64,6 +64,42 @@ int main(void)
 
 `gcc -Wall -Wextra -Werror -I minilibx -L minilibx -lmlx -framework OpenGL -framework AppKit main.c`
 
+## More key event control - [keys.h](keys.h)
+
+To solve the problem of knowning when many keys have been pressed I have made a struct of all the keys.
+
+This file allows the programmer to use the minilibx loop hook to fire off events on key held.
+
+A quick synopsis of the code:
+```C
+#define KEY_A 0
+#define KEY_S 1
+#define KEY_D 2
+...
+
+typedef struct  s_keys
+{
+  int           a:1;
+  int           s:1;
+  int           d:1;
+  ...
+}               t_keys
+```
+
+I really like an idea I saw on the [evil corp](https://github.com/coder-guy22296/EvilCorp) entry for the 42 Hackathon in 2016.
+
+Where you use a constant string of all the letters to turn the keycode into it's matching printable output
+
+It looks like this:
+
+```
+bqweryt123465=97-80]ou[ip lj\"k;\\,/nm.  ` 	. * +   / -  =012345
+```
+
+They used it to type input on to the screen along with [`mlx_string_put()`](man_mlx_pixel_put.md)
+
+I'm sure it could be used for more! I'm thinking about making a typing game :wink:
+
 # TODOS --- Ideas for this project when I return to it.
 
 ### TODO: STARTING POINTS
