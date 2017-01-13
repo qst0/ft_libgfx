@@ -68,16 +68,13 @@ mlx_loop_hook ( void *mlx_ptr, int (*funct_ptr)(), void *param );
 
 ## GOING FURTHER WITH EVENTS
 
-       The MiniLibX provides a much generic access to all type of events. The mlx.h include define
-       mlx_hook() in the same manner mlx_*_hook functions work. The event and mask values will  be
-       taken from the X11 include file "X.h" (even for MacOSX, for compatibility purposes)
+The MiniLibX provides a much generic access to all type of events.
 
-       See  source  code  of mlx_int_param_event.c to find out how the MiniLibX will call your own
-       function for a specific event.
-       
-       TODO:
-       Link directly to mlx_int_param_event.c here, for now, you have to download the x11 sources.
-       Mlx in the repo right now is MACOS version.
+The `mlx.h` include defines `mlx_hook()` in the same manner `mlx_*_hook` functions work.
+The event and mask values will be taken from the X11 include file `X.h` (even for MacOSX, for compatibility purposes)       
+
+See  source  code  of [mlx_int_param_event.c](https://github.com/qst0/ft_libgfx/blob/master/minilibx_X11_sources/mlx_int_param_event.c)
+to find out how the MiniLibX will call your own function for a specific event.
        
 ## SEE ALSO
 
