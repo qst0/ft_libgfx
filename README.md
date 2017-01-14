@@ -33,18 +33,25 @@ Take some time and read these pages, if you want to read them in the console:
 
 `man minilibx/man/man1/mlx.1`
 
-The last part is the man page name
+The last part is the man page name, read them all.
 
 ```BASH
 mlx.1
-mlx_loop.1
-mlx_new_image.1
 mlx_new_window.1
 mlx_pixel_put.1
+mlx_new_image.1
+mlx_loop.1
 ```
 
-Once you have done that, try to open a window.
-Here is a short example:
+I have done my best to use [markdown](https://daringfireball.net/projects/markdown/) to make a more readable experience on github.
+
+That being said, man page formatting in the console is intresting too.
+
+Check out [one of the man files](https://github.com/qst0/ft_libgfx/blob/master/minilibx_X11_sources/man/man3/mlx.1) to see the syntax, this one is `mlx.1`.
+
+Once you have done that, try to open a window using the mlx functions.
+
+If you get stuck, here is a short example:
 
 ``` C
 #include <mlx.h>
@@ -63,6 +70,10 @@ int main(void)
 ```
 
 `gcc -Wall -Wextra -Werror -I minilibx -L minilibx -lmlx -framework OpenGL -framework AppKit main.c`
+
+I certainly encourage you to figure out as much as you can with just the man pages and tinkering.
+
+But at a certain point, you should share what you've learned and learn from others.
 
 ## More key event control - [keys.h](keys.h)
 
