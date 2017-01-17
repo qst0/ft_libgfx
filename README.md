@@ -137,14 +137,12 @@ Line Algo?
 ### Anything even slightly useful for coming to a better understanding of computer gfx
 
 #### ft_wireframe
-* http://www.ecere.com/3dbhole/mathematics_of_3d_graphics.html :star:
-* http://www.ecere.com/3dbhole/3d_transformations.html :star:
-* http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf
-* https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html
+* [Ecere 3D Coding Black Hole Tutorial](http://www.ecere.com/3dbhole) :star:
+* [Bresenham's Line Algorithm - Technical PDF](http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf)
+* [Generalized Bresenham's Line Drawing Algorithm](https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html)
 * https://www.khanacademy.org/math/precalculus/precalc-matrices
 * http://stackoverflow.com/questions/12554614/maths-for-color-gradient
 * http://faculty.cs.tamu.edu/jchai/cpsc641_spring10/PerspectiveProjection.pdf
-* https://gist.github.com/jbenet/1087739
 * http://stackoverflow.com/questions/5167269/clock-gettime-alternative-in-mac-os-x
 * https://www.tutorialspoint.com/computer_graphics/visible_surface_detection.htm
 * https://www.fastgraph.com/makegames/3drotation/
@@ -168,6 +166,7 @@ Line Algo?
 
 #### wolf3d
 * http://lodev.org/cgtutor/raycasting.html :star:
+* [Work around lack of clock_gettime in os x](https://gist.github.com/jbenet/1087739)
 * http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/
 * http://mdn.github.io/canvas-raycaster/index.html
 
@@ -175,19 +174,20 @@ Line Algo?
 * https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf
 
 #### misc
-* http://www.playfuljs.com/ :star:
-* http://lodev.org/cgtutor/ :star:
-* http://www.opengl-tutorial.org/beginners-tutorials/
-* http://glslsandbox.com/e#25304.0
+* [Lodev's Computer Graphics Tutorials](http://lodev.org/cgtutor/) :star:
+* [Javascript Graphics Tutorials](http://www.playfuljs.com/) :star:
+* [OpenGL Beginners Tutorials](http://www.opengl-tutorial.org/beginners-tutorials/)
+* [GSL Sandbox](http://glslsandbox.com/e#25304.0)
+* [Advanced Platformer Tutorials via n++ Game Devs](http://www.metanetsoftware.com/dev/tutorials)
 
 
 #### Wikipedia Links
-* http://en.wikipedia.org/wiki/Matrix_(mathematics)
-* https://en.wikipedia.org/wiki/Orthographic_projection
-* https://en.wikipedia.org/wiki/Gimbal
-* https://en.wikipedia.org/wiki/Gimbal_lock
-* https://en.wikipedia.org/wiki/Ray_casting
-* https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
-* https://en.wikipedia.org/wiki/Sierpinski_carpet
-* https://en.wikipedia.org/wiki/Apollonian_gasket
-* https://en.wikipedia.org/wiki/Julia_set
+* [Matrix mathematics](http://en.wikipedia.org/wiki/Matrix_(mathematics))
+* [Orthographic_projection](https://en.wikipedia.org/wiki/Orthographic_projection)
+* [Gimbal](https://en.wikipedia.org/wiki/Gimbal)
+* [Gimbal lock](https://en.wikipedia.org/wiki/Gimbal_lock)
+* [Ray casting](https://en.wikipedia.org/wiki/Ray_casting)
+* [Bresenham's line algorithm](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
+* [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet)
+* [Apollonian gasket](https://en.wikipedia.org/wiki/Apollonian_gasket)
+* [Julia set](https://en.wikipedia.org/wiki/Julia_set)
