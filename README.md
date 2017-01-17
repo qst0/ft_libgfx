@@ -140,15 +140,15 @@ Line Algo?
 * [Ecere 3D Coding Black Hole Tutorial](http://www.ecere.com/3dbhole) :star:
 * [Bresenham's Line Algorithm - Technical PDF](http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf)
 * [Generalized Bresenham's Line Drawing Algorithm](https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html)
-* https://www.khanacademy.org/math/precalculus/precalc-matrices
-* http://stackoverflow.com/questions/12554614/maths-for-color-gradient
 * http://faculty.cs.tamu.edu/jchai/cpsc641_spring10/PerspectiveProjection.pdf
-* http://stackoverflow.com/questions/5167269/clock-gettime-alternative-in-mac-os-x
+* http://stackoverflow.com/questions/12554614/maths-for-color-gradient
+
 * https://www.tutorialspoint.com/computer_graphics/visible_surface_detection.htm
 * https://www.fastgraph.com/makegames/3drotation/
+* https://www.khanacademy.org/math/precalculus/precalc-matrices
 
 #### ft_fractal
-* http://lodev.org/cgtutor/juliamandelbrot.html :star:
+* [Lodev Julia and Mandelbrot Tutorial](http://lodev.org/cgtutor/juliamandelbrot.html) :star:
 * http://www.karlsims.com/julia.html
 * http://www.relativitybook.com/CoolStuff/julia_set.html
 * http://paulbourke.net/fractals/apollony/
@@ -156,22 +156,24 @@ Line Algo?
 * http://www.fractal-animation.net/ufvp.html
 * http://jonisalonen.com/2013/lets-draw-the-mandelbrot-set/
 * http://stackoverflow.com/questions/33978167/julia-set-rendering-code
-* http://lyc.deviantart.com/gallery/
-* http://bugman123.com/index.html
-* http://bugman123.com/Hypercomplex/
+* [Fractal inspiration via Lyc on Deviantart]http://lyc.deviantart.com/gallery/
+* [Hypercomplex Fractals]http://bugman123.com/Hypercomplex/
 * https://books.google.co.uk/books?id=SJRNoOaXs2wC
 * http://www.benpadiah.com/MISC_diagrams/pages/equations/holognomon.html
 * http://stackoverflow.com/questions/5294955/how-to-scale-down-a-range-of-numbers-with-a-known-min-and-max-value
 * http://www.toves.org/books/java/ch18-recurex/
 
 #### wolf3d
-* http://lodev.org/cgtutor/raycasting.html :star:
-* [Work around lack of clock_gettime in os x](https://gist.github.com/jbenet/1087739)
-* http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/
-* http://mdn.github.io/canvas-raycaster/index.html
+* [Lodev Raycasting Tutorial](http://lodev.org/cgtutor/raycasting.html) :star:
+* [Raycasting Tutorial (Theory)](http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/)
+* [Stackoverflow question: clock_gettime](http://stackoverflow.com/questions/5167269/clock-gettime-alternative-in-mac-os-x)
+* [Code for clock_gettime alternative in os x](https://gist.github.com/jbenet/1087739)
+* [JS Raycaster Tutorial](http://www.playfuljs.com/a-first-person-engine-in-265-lines/)
+* [Canvas Raycaster](http://mdn.github.io/canvas-raycaster/index.html)
+* [Raycast Height Maps Example](http://simulationcorner.net/index.php?page=comanche)
 
 #### rt_v1
-* https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf
+* [Codermind Ray Tracing Tutorial](https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf)
 
 #### misc
 * [Lodev's Computer Graphics Tutorials](http://lodev.org/cgtutor/) :star:
@@ -179,6 +181,8 @@ Line Algo?
 * [OpenGL Beginners Tutorials](http://www.opengl-tutorial.org/beginners-tutorials/)
 * [GSL Sandbox](http://glslsandbox.com/e#25304.0)
 * [Advanced Platformer Tutorials via n++ Game Devs](http://www.metanetsoftware.com/dev/tutorials)
+* [Haxiomic GPU Fluid Experiments](http://haxiomic.github.io/GPU-Fluid-Experiments/html5/)
+* [Bugman123]http://bugman123.com/index.html
 
 
 #### Wikipedia Links
