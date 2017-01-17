@@ -8,16 +8,25 @@ I have uploaded all the minilibx sources for viewing and use.
 [[El Capitan]](https://github.com/qst0/ft_libgfx/tree/master/minilibx_macos_elcapitan)
 [[Sierra]](https://github.com/qst0/ft_libgfx/tree/master/minilibx_macos_sierra)
 
-Along with this goal I plan to create a set of tools and functions that can be used to make different types of programs.
-The creation of these tools and functions will be set up as a series of exercises.
+Along with this goal I plan to create a set of resources and functions that can be used to make different types of computer graphics programs. The resources will be aimed at helping others create great 42 graphics projects and encouraging graphics [side projects](https://github.com/all-hack/42moonlight).
 
-Basing this off my previous library for [ft_wireframe](https://github.com/qst0/ft_wireframe), [ft_fractal](https://github.com/qst0/ft_fractal) and some of the ideas going around here at the lab.
+## The Graphics Branch
+
+The goals of the graphics branch are put simply:
+
+* Rasterisation, show a wireframe from a file
+* Render trippy colored mandelbrot and julia set
+* Create a ray caster game engine like wolfenstein
+* Build a 'first try' ray tracer
+* Work with a team to build a feature rich ray tracer
+
+Let's get started.
 
 ## MiniLibX
 
-The keystone of the graphics branch at 42 is learning to use MiniLibX
+The keystone of the 42 graphics branch is learning to use MiniLibX
 
-Besides some old videos on intra, you are given the source and the man pages to figure it out.
+Besides some [old videos on intra](https://elearning.intra.42.fr/notions/fdf/subnotions), you are given the source and the man pages to figure it out.
 
 To help demystify the man pages I took a moment and formatted them for markdown.
 
@@ -33,18 +42,25 @@ Take some time and read these pages, if you want to read them in the console:
 
 `man minilibx/man/man1/mlx.1`
 
-The last part is the man page name
+The last part is the man page name, read them all.
 
 ```BASH
 mlx.1
-mlx_loop.1
-mlx_new_image.1
 mlx_new_window.1
 mlx_pixel_put.1
+mlx_new_image.1
+mlx_loop.1
 ```
 
-Once you have done that, try to open a window.
-Here is a short example:
+I have done my best to use [markdown](https://daringfireball.net/projects/markdown/) to make a more readable experience on github.
+
+That being said, man page formatting in the console is intresting too.
+
+Check out [one of the man files](https://github.com/qst0/ft_libgfx/blob/master/minilibx_X11_sources/man/man3/mlx.1) to see the syntax, this one is `mlx.1`.
+
+Once you have done that, try to open a window using the mlx functions.
+
+If you get stuck, here is a short example:
 
 ``` C
 #include <mlx.h>
@@ -64,81 +80,152 @@ int main(void)
 
 `gcc -Wall -Wextra -Werror -I minilibx -L minilibx -lmlx -framework OpenGL -framework AppKit main.c`
 
-# TODOS --- Ideas for this project when I return to it.
+I certainly encourage you to figure out as much as you can with just the man pages and tinkering.
 
-### TODO: STARTING POINTS
+But at a certain point, you should show what you've learned and learn from others.
 
-* open a window
+## Getting started with fdf [(ft_wireframe)](https://github.com/qst0/ft_wireframe)
+
+Well first of all, check out all the [juicy details](https://projects.intra.42.fr/fdf/mine) they give us.
+
+It's a solid set of guidelines but nowhere to start. *42 Classic*. But it won't be like this the whole way.
+Since the system is set up this way I would highly recommend experementing with any ideas you have right now.
+Get comfortable trying to make something happen, use events, loops and anything else you found in the man pages.
+
+Once you have done this, you should already be thinking about:
+
+[Bresenham's line algorithm](http://graphics.idav.ucdavis.edu/education/GraphicsNotes/Bresenhams-Algorithm.pdf)
+
+Drawing a line, various curves and shapes are normally handled by a graphics library. At 42 we will doing all of this from scratch, minilibx is not feature rich for *some reason*. Since we are rendering a grid, that line algorithm is where we need to start. The link above is to a very detailed proof of the algorithm. In the links below you can find more on the subject. 
+
+That's all for now, find me if you have any more questions or suggestions for the fdf section.
+
+## More key event control - [keys.h](keys.h)
+
+To solve the problem of knowning when many keys have been pressed I have made a struct of all the keys.
+
+This file allows the programmer to use the minilibx loop hook to fire off events on key held.
+
+A quick synopsis of the code:
+```C
+#define KEY_A 0
+#define KEY_S 1
+#define KEY_D 2
+...
+
+typedef struct  s_keys
+{
+  int           a:1;
+  int           s:1;
+  int           d:1;
+  ...
+}               t_keys
+```
+
+I really like an idea I saw on the [evil corp](https://github.com/coder-guy22296/EvilCorp) entry for the 42 Hackathon in 2016.
+
+Where you use a constant string of all the letters to turn the keycode into it's matching printable output
+
+It looks like this:
+
+```
+bqweryt123465=97-80]ou[ip lj\"k;\\,/nm.  ` 	. * +   / -  =012345
+```
+
+They used it to type input on to the screen along with [`mlx_string_put()`](man_mlx_pixel_put.md)
+
+I'm sure it could be used for more! I'm thinking about making a typing game :wink:
+
+# TODOS --- Progress Goals for the Project
+
+### TODO: STARTING POINTS EXPLAINED
+
 * put a pixel on the screen
-* draw a square
-* draw vertical and horizonal
-* [Bresenham's line algorithm](http://graphics.idav.ucdavis.edu/education/GraphicsNotes/Bresenhams-Algorithm.pdf)
+* draw particles on the screen
+* draw vertical and horizonal lines
+* draw a square / circle / triangle
 
 ### TODO: Answer Questions
+
 What important graphics library features are missing from mlx?
+
+* Many things are missing from mlx, drawing, rotating, redraw and all sorts of events
+
 Possible ideas for structures?
+
+* We could use something that could store the data in a point
+* Try to make something that can hold you mlx pointer and window to pass to the loop hook
+
 Possbile idea for functions?
+
+* Make a function that puts a pixel into an mlx image
+
 Useful macros?
 
-### TODO: New functions
+* Be sure to set constants as macros, move any global variables into a structure
 
-Window management?
-Safe Points Drawing?
-Line Algo?
+What about window management?
 
-## Link Dump!
+* I don't know of any way to move the window or place it in another area in mlx.
+
+# Graphics Branch Link Dump!
 ### Anything even slightly useful for coming to a better understanding of computer gfx
 
 #### ft_wireframe
-* http://www.ecere.com/3dbhole/mathematics_of_3d_graphics.html
-* http://www.ecere.com/3dbhole/3d_transformations.html
-* http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf
-* https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html
-* https://www.khanacademy.org/math/precalculus/precalc-matrices
-* http://stackoverflow.com/questions/12554614/maths-for-color-gradient
-* http://faculty.cs.tamu.edu/jchai/cpsc641_spring10/PerspectiveProjection.pdf
-* https://gist.github.com/jbenet/1087739
-* http://stackoverflow.com/questions/5167269/clock-gettime-alternative-in-mac-os-x
-* https://www.tutorialspoint.com/computer_graphics/visible_surface_detection.htm
-* https://www.fastgraph.com/makegames/3drotation/
+* [Ecere 3D Coding Black Hole Tutorial](http://www.ecere.com/3dbhole) :star:
+* [Bresenham's Line Algorithm - Technical PDF](http://www.idav.ucdavis.edu/education/GraphicsNotes/CppNotes/Inline-Functions/CAGDNotes/Bresenhams-Algorithm.pdf)
+* [Generalized Bresenham's Line Drawing Algorithm](https://www.cs.umd.edu/class/fall2003/cmsc427/bresenham.html)
+* [Perspective Projection PDF](http://faculty.cs.tamu.edu/jchai/cpsc641_spring10/PerspectiveProjection.pdf)
+* [Math for color gradient](http://stackoverflow.com/questions/12554614/maths-for-color-gradient)
+* [Visible surface detection](https://www.tutorialspoint.com/computer_graphics/visible_surface_detection.htm)
+* [3D Rotation](https://www.fastgraph.com/makegames/3drotation/)
+* [Khanacademy Precalc Matrices](https://www.khanacademy.org/math/precalculus/precalc-matrices)
 
 #### ft_fractal
-* http://www.karlsims.com/julia.html
-* http://www.relativitybook.com/CoolStuff/julia_set.html
-* http://paulbourke.net/fractals/apollony/
-* http://www.relativitybook.com/CoolStuff/julia_set_4d.html
-* http://www.fractal-animation.net/ufvp.html
-* http://jonisalonen.com/2013/lets-draw-the-mandelbrot-set/
-* http://stackoverflow.com/questions/33978167/julia-set-rendering-code
-* http://lyc.deviantart.com/gallery/
-* http://bugman123.com/index.html
-* http://bugman123.com/Hypercomplex/
-* https://books.google.co.uk/books?id=SJRNoOaXs2wC
-* http://www.benpadiah.com/MISC_diagrams/pages/equations/holognomon.html
-* http://stackoverflow.com/questions/5294955/how-to-scale-down-a-range-of-numbers-with-a-known-min-and-max-value
-* http://www.toves.org/books/java/ch18-recurex/
+* [Lodev Julia and Mandelbrot Tutorial](http://lodev.org/cgtutor/juliamandelbrot.html) :star:
+* [Understanding Julia and Mandelbrot Sets - Karl Sims](http://www.karlsims.com/julia.html)
+* [Alt.fractals - Cool Stuff: Fractals](http://www.relativitybook.com/CoolStuff/julia_set.html)
+* [Apollony Fractal - written by Paul Bourke](http://paulbourke.net/fractals/apollony/)
+* [Alt.fractals - Cool Stuff: 4d Julia](http://www.relativitybook.com/CoolStuff/julia_set_4d.html)
+* [the   Ultimate   Fractal   Video   Project   !](http://www.fractal-animation.net/ufvp.html)
+* [Mandelbrot set tutorial](http://jonisalonen.com/2013/lets-draw-the-mandelbrot-set/)
+* [Julia set rendering code](http://stackoverflow.com/questions/33978167/julia-set-rendering-code)
+* [Fractal inspiration via Lyc on Deviantart](http://lyc.deviantart.com/gallery/)
+* [Hypercomplex Fractals](http://bugman123.com/Hypercomplex/)
+* [Alt.fractals: A Visual Guide to Fractal Geometry and Design](https://books.google.co.uk/books?id=SJRNoOaXs2wC)
+* [Infinite division of congruent similarities](http://www.benpadiah.com/MISC_diagrams/pages/equations/holognomon.html)
+* [Scale a range to a known min and max](http://stackoverflow.com/questions/5294955/how-to-scale-down-a-range-of-numbers-with-a-known-min-and-max-value)
+* [Java recursion examples](http://www.toves.org/books/java/ch18-recurex/)
 
 #### wolf3d
-* http://lodev.org/cgtutor/raycasting.html
-* http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/
-* http://mdn.github.io/canvas-raycaster/index.html
+* [Lodev Raycasting Tutorial](http://lodev.org/cgtutor/raycasting.html) :star:
+* [Raycasting Tutorial (Theory)](http://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/)
+* [Stackoverflow question: clock_gettime](http://stackoverflow.com/questions/5167269/clock-gettime-alternative-in-mac-os-x)
+* [Code for clock_gettime alternative in os x](https://gist.github.com/jbenet/1087739)
+* [JS Raycaster Tutorial](http://www.playfuljs.com/a-first-person-engine-in-265-lines/)
+* [Canvas Raycaster](http://mdn.github.io/canvas-raycaster/index.html)
+* [Raycast Height Maps Example](http://simulationcorner.net/index.php?page=comanche)
 
 #### rt_v1
-* https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf
+* [Codermind Ray Tracing Tutorial](https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf)
 
 #### misc
-* http://lodev.org/cgtutor/
-* http://www.opengl-tutorial.org/beginners-tutorials/
-* http://glslsandbox.com/e#25304.0
+* [Lodev's Computer Graphics Tutorials](http://lodev.org/cgtutor/) :star:
+* [Javascript Graphics Tutorials](http://www.playfuljs.com/) :star:
+* [OpenGL Beginners Tutorials](http://www.opengl-tutorial.org/beginners-tutorials/)
+* [GSL Sandbox](http://glslsandbox.com/e#25304.0)
+* [Advanced Platformer Tutorials via n++ Game Devs](http://www.metanetsoftware.com/dev/tutorials)
+* [Haxiomic GPU Fluid Experiments](http://haxiomic.github.io/GPU-Fluid-Experiments/html5/)
+* [Bugman123](http://bugman123.com/index.html)
 
 
 #### Wikipedia Links
-* http://en.wikipedia.org/wiki/Matrix_(mathematics)
-* https://en.wikipedia.org/wiki/Orthographic_projection
-* https://en.wikipedia.org/wiki/Gimbal
-* https://en.wikipedia.org/wiki/Gimbal_lock
-* https://en.wikipedia.org/wiki/Ray_casting
-* https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
-* https://en.wikipedia.org/wiki/Sierpinski_carpet
-* https://en.wikipedia.org/wiki/Apollonian_gasket
-* https://en.wikipedia.org/wiki/Julia_set
+* [Matrix mathematics](http://en.wikipedia.org/wiki/Matrix_(mathematics))
+* [Orthographic_projection](https://en.wikipedia.org/wiki/Orthographic_projection)
+* [Gimbal](https://en.wikipedia.org/wiki/Gimbal)
+* [Gimbal lock](https://en.wikipedia.org/wiki/Gimbal_lock)
+* [Ray casting](https://en.wikipedia.org/wiki/Ray_casting)
+* [Bresenham's line algorithm](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
+* [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet)
+* [Apollonian gasket](https://en.wikipedia.org/wiki/Apollonian_gasket)
+* [Julia set](https://en.wikipedia.org/wiki/Julia_set)
