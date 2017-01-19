@@ -136,6 +136,51 @@ They used it to type input on to the screen along with [`mlx_string_put()`](man_
 
 I'm sure it could be used for more! I'm thinking about making a typing game :wink:
 
+## What about events?
+
+It's a good idea to experement with the events they mention in the man pages, but there is more than that!
+
+Check out the [mlx_loop](man_mlx_loop.md) man page, at the bottom is says to look at [mlx_int_param_event.c](https://github.com/qst0/ft_libgfx/blob/master/minilibx_X11_sources/mlx_int_param_event.c)
+
+In this code we can see:
+
+```C
+int	(*(mlx_int_param_event[]))() =
+{
+  mlx_int_param_undef,   /* 0 */
+  mlx_int_param_undef,
+  mlx_int_param_KeyPress,
+  mlx_int_param_KeyRelease,  /* 3 */
+  mlx_int_param_ButtonPress,
+  mlx_int_param_ButtonRelease,
+  mlx_int_param_MotionNotify,  /* 6 */
+  ...
+```
+
+This can help you make sense of the command `mlx_hook` in [mlx_hook.c](https://github.com/qst0/ft_libgfx/blob/master/minilibx_X11_sources/mlx_hook.c)
+
+We can create our own key hooks with this information:
+
+```C
+void	set_hooks(t_view *v)
+{
+	mlx_do_key_autorepeatoff(v->mlx);
+	mlx_hook(v->window, 2, 0, key_press_hook, v);
+	mlx_hook(v->window, 3, 0, key_release_hook, v);
+	mlx_hook(v->window, 4, 0, mouse_press_hook, v);
+	mlx_hook(v->window, 5, 0, mouse_release_hook, v);
+	mlx_hook(v->window, 6, 0, motion_hook, v);
+	mlx_hook(v->window, 12, 0, expose_hook, v);
+	mlx_hook(v->window, 17, 0, exit_hook, v);
+}
+```
+
+The example above shows all the useful hook params I have found, please help me find any more!
+
+The exit_hook (which you could name anything) is the undocumented magic to take from this code.
+
+It's how you can stop your program with the `exit(0);` command when the user presses the closing button on the window.
+
 # TODOS --- Progress Goals for the Project
 
 ### TODO: STARTING POINTS EXPLAINED
