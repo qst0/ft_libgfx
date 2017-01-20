@@ -10,6 +10,18 @@ I have uploaded all the minilibx sources for viewing and use.
 
 Along with this goal I plan to create a set of resources and functions that can be used to make different types of computer graphics programs. The resources will be aimed at helping others create great 42 graphics projects and encouraging graphics [side projects](https://github.com/all-hack/42moonlight).
 
+#### Contents:
+
+* [The Graphics Branch](#the-graphics-branch)
+* [MiniLibX](#minilibx)
+* [Getting started with fdf (ft_wireframe)](#getting-started-with-fdf-ft_wireframe)
+* [Getting started with fractol ft_fractal](#getting-started-with-fractol-ft_fractal)
+* [More key event control - keys.h](#more-key-event-control---keysh)
+* [What about events?](#what-about-events)
+* [TODOS](#todos)
+* [Graphics Branch Link Dump](#graphics-branch-link-dump)
+
+
 ## The Graphics Branch
 
 The goals of the graphics branch are put simply:
@@ -100,6 +112,35 @@ Drawing a line, various curves and shapes are normally handled by a graphics lib
 
 That's all for now, find me if you have any more questions or suggestions for the fdf section.
 
+*This part of the guide is a work in progress, ask if you have a question for now*
+
+There are more resources, examples and inspiration [in the link dump].(#graphics-branch-link-dump)
+
+## Getting started with fractol [(ft_fractal)](https://github.com/qst0/ft_wireframe)
+
+There are many good resources on this adventure in computer graphics, but I would argue the best place to start is on paper.
+
+Look up imaginary numbers. Throw some numbers into the function for the mandelbrot.
+
+`f(x) = z² + c`
+
+Real numbers, imaginary numbers then complex numbers.
+[Here is a guide](http://www.wikihow.com/Plot-the-Mandelbrot-Set-By-Hand)
+
+It would seem to me the key to this project, like any other, is to get hands on and experement.
+
+Here is a macro for formula that might be useful:
+
+[Scale a range to a known min and max](http://stackoverflow.com/questions/5294955/how-to-scale-down-a-range-of-numbers-with-a-known-min-and-max-value)
+
+```C
+#define RANGE_CHANGE(x,a,b,min,max) (((b)-(a))*((x)-(min))/((max)-(min)))+(a)
+```
+
+*This part of the guide is a work in progress, ask if you have a question for now*
+
+There are more resources, examples and inspiration [in the link dump].(#graphics-branch-link-dump)
+
 ## More key event control - [keys.h](keys.h)
 
 To solve the problem of knowning when many keys have been pressed I have made a struct of all the keys.
@@ -181,7 +222,8 @@ The exit_hook (which you could name anything) is the undocumented magic to take 
 
 It's how you can stop your program with the `exit(0);` command when the user presses the closing button on the window.
 
-# TODOS --- Progress Goals for the Project
+# TODOS
+#### Progress Goals for the Project
 
 ### TODO: STARTING POINTS EXPLAINED
 
@@ -213,7 +255,7 @@ What about window management?
 
 * I don't know of any way to move the window or place it in another area in mlx.
 
-# Graphics Branch Link Dump!
+# Graphics Branch Link Dump
 ### Anything even slightly useful for coming to a better understanding of computer gfx
 
 #### ft_wireframe
@@ -228,6 +270,7 @@ What about window management?
 
 #### ft_fractal
 * [Lodev Julia and Mandelbrot Tutorial](http://lodev.org/cgtutor/juliamandelbrot.html) :star:
+* [Plot the Mandelbrot Set by Hand](http://www.wikihow.com/Plot-the-Mandelbrot-Set-By-Hand)
 * [Understanding Julia and Mandelbrot Sets - Karl Sims](http://www.karlsims.com/julia.html)
 * [Alt.fractals - Cool Stuff: Fractals](http://www.relativitybook.com/CoolStuff/julia_set.html)
 * [Apollony Fractal - written by Paul Bourke](http://paulbourke.net/fractals/apollony/)
