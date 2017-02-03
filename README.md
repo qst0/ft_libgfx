@@ -10,6 +10,10 @@ I have uploaded all the minilibx sources for viewing and use.
 
 Along with this goal I plan to create a set of resources and functions that can be used to make different types of computer graphics programs. The resources will be aimed at helping others create great 42 graphics projects and encouraging graphics [side projects](https://github.com/all-hack/42moonlight).
 
+*Sorry, this repo is currently not being updated, it is on hold.*
+
+*Come to me if you have any questions, I will resume work on this resource after I turn in wolf3d*
+
 #### Contents:
 
 * [The Graphics Branch](#the-graphics-branch)
@@ -224,6 +228,10 @@ It's how you can stop your program with the `exit(0);` command when the user pre
 
 # TODOS
 #### Progress Goals for the Project
+
+### TODO: MORE LINKS!
+
+`(I have more links I need to add and sort!)`
 
 ### TODO: STARTING POINTS EXPLAINED
 
