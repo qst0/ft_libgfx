@@ -1,5 +1,14 @@
 # ft_libgfx
-42 School Graphics Custom Library
+## b_gfx overload
+
+Not at 42 following the graphics branch?
+This repo still has treasures for you,
+please check out the [link dump](#graphics-branch-link-dump).
+
+Everyone, please feel free to contribue. I will look at all pull requests.
+
+If you are at 42, please reach out to qst0 in person for questions.
+They are best that way.
 
 To make it easier to work with, I will be explaining and looking into the 42 School Graphics Library Minilibx.
 
@@ -325,6 +334,7 @@ What about window management?
 * [JS Raycaster Tutorial](http://www.playfuljs.com/a-first-person-engine-in-265-lines/)
 * [Canvas Raycaster](http://mdn.github.io/canvas-raycaster/index.html)
 * [Raycast Height Maps Example](http://simulationcorner.net/index.php?page=comanche)
+* [EXTRA: John Carmack: Systems Engineering Technical Talk](https://www.youtube.com/watch?v=lHLpKzUxjGk) :star:
 
 #### rt_v1
 * [Codermind Ray Tracing Tutorial](https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf)
