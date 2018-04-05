@@ -64,6 +64,7 @@ Let's get started.
 #### ft_fractal
 * [Lodev Julia and Mandelbrot Tutorial](http://lodev.org/cgtutor/juliamandelbrot.html) :star:
 * [Plot the Mandelbrot Set by Hand](http://www.wikihow.com/Plot-the-Mandelbrot-Set-By-Hand)
+* [Real-time animated fractal in only 32 lines of Javascript code] http://slicker.me/fractals/animate.htm
 * [Understanding Julia and Mandelbrot Sets - Karl Sims](http://www.karlsims.com/julia.html)
 * [Alt.fractals - Cool Stuff: Fractals](http://www.relativitybook.com/CoolStuff/julia_set.html)
 * [Apollony Fractal - written by Paul Bourke](http://paulbourke.net/fractals/apollony/)
@@ -77,6 +78,7 @@ Let's get started.
 * [Infinite division of congruent similarities](http://www.benpadiah.com/MISC_diagrams/pages/equations/holognomon.html)
 * [Scale a range to a known min and max](http://stackoverflow.com/questions/5294955/how-to-scale-down-a-range-of-numbers-with-a-known-min-and-max-value)
 * [Java recursion examples](http://www.toves.org/books/java/ch18-recurex/)
+
 
 #### wolf3d
 * [Lodev Raycasting Tutorial](http://lodev.org/cgtutor/raycasting.html) :star:
