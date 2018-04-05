@@ -64,7 +64,7 @@ Let's get started.
 #### ft_fractal
 * [Lodev Julia and Mandelbrot Tutorial](http://lodev.org/cgtutor/juliamandelbrot.html) :star:
 * [Plot the Mandelbrot Set by Hand](http://www.wikihow.com/Plot-the-Mandelbrot-Set-By-Hand)
-* [Real-time animated fractal in only 32 lines of Javascript code] http://slicker.me/fractals/animate.htm
+* [Real-time animated fractal in only 32 lines of Javascript code](http://slicker.me/fractals/animate.htm)
 * [Understanding Julia and Mandelbrot Sets - Karl Sims](http://www.karlsims.com/julia.html)
 * [Alt.fractals - Cool Stuff: Fractals](http://www.relativitybook.com/CoolStuff/julia_set.html)
 * [Apollony Fractal - written by Paul Bourke](http://paulbourke.net/fractals/apollony/)
