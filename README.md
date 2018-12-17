@@ -91,7 +91,9 @@ Let's get started.
 * [EXTRA: John Carmack: Systems Engineering Technical Talk](https://www.youtube.com/watch?v=lHLpKzUxjGk) :star:
 
 #### rt_v1
-* [Codermind Ray Tracing Tutorial](https://www.ics.uci.edu/~gopi/CS211B/RayTracing%20tutorial.pdf)
+* [Codermind team Ray Tracing Tutorial PDF](https://sebastiandang.github.io/docs/cse168/RayTracing.pdf)
+* [UC Davis Lecture : 49 minutes](https://www.youtube.com/watch?v=Ahp6LDQnK4Y)
+* [Disney's Practical Guide to Path Tracing : 10 minutes](https://www.youtube.com/watch?v=frLwRLS_ZR0)
 
 #### misc
 * [Lodev's Computer Graphics Tutorials](http://lodev.org/cgtutor/) :star:
