@@ -15,6 +15,7 @@ Not at 42 or following the graphics projects somewhere else?
 This repo still has treasures for you,
 please check out the [link dump](#graphics-branch-link-dump).
 
+Here is a shameless plug for my latest video game: [Hexcross](https://play.google.com/store/apps/details?id=com.metahobby.hexcross&utm_source=ft_libgfx)
 
 To make it easier to work with, I will be explaining and looking into the 42 School Graphics Library Minilibx.
 
