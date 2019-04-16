@@ -1,23 +1,17 @@
-# ft_libgfx
-## b_gfx overload
+# ft_libgfx AKA b_gfx overload
 
-Hello Readers!
+Greetings b_gfx'rs and hackers alike!
 
-Email me at `msnyng+gfx`@`gmail.com` with any questions you might have about this repo,
+Oh what is this?
+[![Hexcross by MetaHobby, vine board with timed game](https://metahobby.com/wp-content/uploads/2019/04/Simulator-Screen-Shot-iPhone-8-Plus-2019-04-13-at-02.54.57.png)](https://play.google.com/store/apps/details?id=com.metahobby.hexcross&utm_source=ft_libgfx)
 
-<s>If you are at 42, please reach out to qst0 in person for questions.
-They are best that way.</s>
+Oh! It's a shameless plug for my latest video game: [Hexcross](https://play.google.com/store/apps/details?id=com.metahobby.hexcross&utm_source=ft_libgfx)
 
-Everyone, please feel free to contribue. I will look at all pull requests.
+I've been back working in this type of project now (escaping from web, database and other duties) so look forward to more screen shots and juice knowledge as I find it. Probably a refactor of this resource at some point too...
 
-Not at 42 or following the graphics projects somewhere else?
+Without futher ado:
 
-This repo still has treasures for you,
-please check out the [link dump](#graphics-branch-link-dump).
-
-Here is a shameless plug for my latest video game: [Hexcross](https://play.google.com/store/apps/details?id=com.metahobby.hexcross&utm_source=ft_libgfx)
-
-To make it easier to work with, I will be explaining and looking into the 42 School Graphics Library Minilibx.
+#### To make it easier to work with, I will be explaining and looking into the 42 School Graphics Library Minilibx.
 
 I have uploaded all the minilibx sources for viewing and use.
 [[X11]](https://github.com/qst0/ft_libgfx/tree/master/minilibx_X11_sources)
@@ -36,6 +30,18 @@ Along with this goal I plan to create a set of resources and functions that can 
 * [More key event control - keys.h](#more-key-event-control---keysh)
 * [What about events?](#what-about-events)
 * [TODOS](#todos)
+
+Email me at `msnyng+gfx`@`gmail.com` with any questions you might have about this repo.
+
+If you are at 42, please reach out to qst0 in person for questions.
+They are best that way. Currently in 42 Accelerate in Zone 4.
+
+Please feel free to fork or contribute to this repo. It would look good, right? 
+
+Not at 42? Following the graphics projects somewhere else? Just curious?
+
+This repo still has treasures for you,
+please check out the [link dump](#graphics-branch-link-dump).
 
 ## The Graphics Branch
 
