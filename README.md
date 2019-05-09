@@ -2,7 +2,9 @@
 
 Greetings b_gfx'rs and hackers alike!
 
-Oh what is this?
+#### To make it easier to work with, I will be explaining and looking into the 42 School Graphics Library Minilibx.
+
+Oh wait what is this?
 [![Hexcross by MetaHobby, vine board with timed game](https://metahobby.com/wp-content/uploads/2019/04/Simulator-Screen-Shot-iPhone-8-Plus-2019-04-13-at-02.54.57.png)](https://play.google.com/store/apps/details?id=com.metahobby.hexcross&utm_source=ft_libgfx)
 
 Oh! It's a shameless plug for my latest video game: [Hexcross](https://play.google.com/store/apps/details?id=com.metahobby.hexcross&utm_source=ft_libgfx)
