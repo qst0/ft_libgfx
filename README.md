@@ -185,6 +185,8 @@ int main(void)
 
 `gcc -Wall -Wextra -Werror -I minilibx -L minilibx -lmlx -framework OpenGL -framework AppKit main.c`
 
+Remember, where this line above says `minilibx` yours might say something like `minilibx_macos_sierra` it's simply the name of the folder with mlx built in it. Speaking of which, be sure to build mlx like so: `cd <mlxfolder>` `make`
+
 I certainly encourage you to figure out as much as you can with just the man pages and tinkering.
 
 But at a certain point, you should show what you've learned and learn from others.
