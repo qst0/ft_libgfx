@@ -1,6 +1,7 @@
 # ft_libgfx AKA b_gfx overload
 
 Greetings b_gfx'rs and hackers alike!
+For your reading pleasure, [dark-mode is on github-pages](https://qst0.github.io/ft_libgfx/).
 
 #### To make it easier to work with, I will be explaining and looking into the 42 School Graphics Library Minilibx.
 
@@ -11,7 +12,7 @@ Oh! It's a shameless plug for my latest video game: [Hexcross](https://play.goog
 
 I've been back working in this type of project now (escaping from web, database and other duties) so look forward to more screen shots and juice knowledge as I find it. Probably a refactor of this resource at some point too...
 
-[[![metaHobbyLogo](https://metahobby.com/wp-content/uploads/2019/06/spr_credits_qst.png)](https://metahobby.com/beta)
+[![metaHobbyLogo](https://metahobby.com/wp-content/uploads/2019/06/spr_credits_qst.png)](https://metahobby.com/beta)
 
 [Want to beta test our upcoming game?](https://metahobby.com/beta)
 
