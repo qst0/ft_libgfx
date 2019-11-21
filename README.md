@@ -67,6 +67,7 @@ Let's get started.
 ### Anything even slightly useful for coming to a better understanding of gfx
 
 * [Learn Computer Graphics From Scratchapixel.com](https://www.scratchapixel.com/) :star:
+* [MLX Cookbook Post 42Network](https://stackoverflow.com/c/42network/questions/164)
 
 #### ft_wireframe
 * [Ecere 3D Coding Black Hole Tutorial](http://www.ecere.com/3dbhole) :star:
