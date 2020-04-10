@@ -1,5 +1,9 @@
 # ft_libgfx AKA b_gfx overload
 
+## NEWS UPDATE: New Projects Coming!
+
+> Hello everyone, hope you are staying safe. We have new projects coming with the new cursus in 2020. The information here should stay relevant but I look forward to updating it when we get the new subjects.
+
 Greetings b_gfx'rs and hackers alike!
 For your reading pleasure, [dark-mode is on github-pages](https://qst0.github.io/ft_libgfx/).
 
