@@ -62,9 +62,9 @@ mlx_loop_hook ( void *mlx_ptr, int (*funct_ptr)(), void *param );
 
        param is the address specified in the mlx_*_hook calls. This address is never used nor mod-
        ified by the MiniLibX. On key and mouse events, additional information is  passed:  keycode
-       tells you which key is pressed (X11 : look for the include file "keysymdef.h", MacOS : cre-
-       ate a small software and find out by yourself), ( x , y ) are the coordinates of the  mouse
-       click in the window, and button tells you which mouse button was pressed.
+       tells you which key is pressed (X11 : look for the include file "keysymdef.h", MacOS : [click here]{https://gist.github.com/jfortin42/68a1fcbf7738a1819eb4b2eef298f4f8}), 
+       ( x , y ) are the coordinates of the  mouse click in the window, and button tells you which 
+       mouse button was pressed.
 
 ## GOING FURTHER WITH EVENTS
 
